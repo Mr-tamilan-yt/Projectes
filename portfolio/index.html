@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandhakumar - Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+    <canvas id="falling-bg"></canvas>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">NK</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">NK</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="nav-link text-white hover:text-purple-400 transition">Home</a>
+                        <a href="#about" class="nav-link text-white hover:text-purple-400 transition">About</a>
+                        <a href="#skills" class="nav-link text-white hover:text-purple-400 transition">Skills</a>
+                        <a href="#projects" class="nav-link text-white hover:text-purple-400 transition">Projects</a>
+                        <a href="#contact" class="nav-link text-white hover:text-purple-400 transition">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I am<br></h1>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">NANDHAKUMAR V</h1>
+                   
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">I'm a <span class="gradient-text">Frontend Developer</span></h2>
+                    <p class="text-white-300 mb-8 text-lg">
+                        Passionate about creating beautiful, responsive, and user-friendly websites. 
+                        I love turning ideas into reality through code. With a strong foundation in 
+                        modern web technologies, I build digital experiences that are both functional 
+                        and visually appealing.
+                    </p>
+                    <div class="flex space-x-8">
+                        <a href="https://github.com" target="_blank" class="social-icon text-white text-2xl hover:text-purple-400">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon text-white text-2xl hover:text-purple-400">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon text-white text-2xl hover:text-purple-400">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden gradient-border">
+                        <img src="profile.jpg" 
+                             alt="Nandhakumar" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <div id="about" class="about-container">
+        <h4 class="about-heading">about me</h4>
+        
+        <div class="about-content">
+            <p class="about-text">
+               Hi, I'm Nandhakumar.V<br>
+               <br>
+I'm a passionate Frontend Developer who loves creating clean and responsive websites. 
+            </p>
+            
+            <p class="about-text">
+                I specialize in HTML, CSS, JavaScript, React, and Tailwind CSS. With a strong foundation in web technologies🌐, I've built multiple projects ranging from portfolios to interactive web apps.
+
+I'm currently pursuing a B.E. in Computer Science engineering and i continuously improving my frontend skills while exploring backend development using Node.js and mongo.db
+            </p>
+            
+            <p class="about-text">
+                I'm a hardworking and self-motivated person. Once I decide to learn something, I focus completely and make sure I finish it 🎯, No matter how hard it is.
+
+I also love exploring new design ideas💡 and improving my creativity through web development📈.Thank you for visiting my portfolio💗
+            </p>
+           <div class="buttons-container">
+            <button class="btn" onclick="viewResume()">
+                📄 View Resume
+            </button>
+            <button class="btn" onclick="viewCertificates()">
+                🏆 View Certificates
+            </button>
+        </div>
+        </div>
+   </div>
+
+
+
+
+       
+        
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Resume</div>
+                <button class="close-btn" onclick="closeModal('resumeModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading resume...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Modal -->
+    <div id="certificatesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Certificates</div>
+                <button class="close-btn" onclick="closeModal('certificatesModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="certificates-grid">
+                    <div class="certificate-card" onclick="viewCertificate(1)">
+                        <div class="certificate-icon">🎓</div>
+                        <div class="certificate-title">EGC Certificate </div>
+                        <div class="certificate-description">has contributed to the development of Empower Guiding Centre Website</div>
+                    </div>
+                    <div class="certificate-card" onclick="viewCertificate(2)">
+                        <div class="certificate-icon">💻</div>
+                        <div class="certificate-title">tcsion Certificate</div>
+                        <div class="certificate-description">TCS iON Career Edge - Y oung P rofes s ional</div>
+                    </div>
+                    <div class="certificate-card" onclick="viewCertificate(3)">
+                        <div class="certificate-icon">🔧</div>
+                        <div class="certificate-title">EGC internship</div>
+                        <div class="certificate-description"> web  development  Internship</div>
+                    </div>
+                    <div class="certificate-card" onclick="viewCertificate(4)">
+                        <div class="certificate-icon">🎨</div>
+                        <div class="certificate-title">NPTEL Certificate</div>
+                        <div class="certificate-description">Embedded system design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Viewer Modal -->
+    <div id="certificateViewerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="certificateTitle">Certificate</div>
+                <button class="close-btn" onclick="closeModal('certificateViewerModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading certificate...
+                </div>
+            </div>
+        </div>
+    </div>
+
+       
+
+ 
+
+
+
+
+ 
+
+    <!-- Skills Section -->
+    <section id="skills" class="section py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">My Skills</h2>
+            <p class="text-center">Here  are some of my skills on which i have learnt</p>
+            <br>
+            <br>
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Frontend Skills -->
+                <div class="bg-gray-800 rounded-xl p-8 skill-card gradient-box">
+                    <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Frontend Development</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-html5 text-4xl text-orange-500"></i>
+                            </div>
+                            <span class="text-white">HTML5</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+                            </div>
+                            <span class="text-white">CSS3</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-js text-4xl text-yellow-400"></i>
+                            </div>
+                            <span class="text-white">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-bootstrap text-4xl text-purple-500"></i>
+                            </div>
+                            <span class="text-white">Bootstrap</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fas fa-wind text-4xl text-teal-400"></i>
+                            </div>
+                            <span class="text-white">Tailwind</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-react text-4xl text-blue-400"></i>
+                            </div>
+                            <span class="text-white">React</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="bg-gray-800 rounded-xl p-8 skill-card gradient-box">
+                    <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Other Technologies</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fas fa-database text-4xl text-green-500"></i>
+                            </div>
+                            <span class="text-white">MongoDB</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fas fa-server text-4xl text-blue-300"></i>
+                            </div>
+                            <span class="text-white">Netlify</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-git-alt text-4xl text-orange-600"></i>
+                            </div>
+                            <span class="text-white">Git</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fab fa-github text-4xl text-white"></i>
+                            </div>
+                            <span class="text-white">GitHub</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fas fa-terminal text-4xl text-gray-300"></i>
+                            </div>
+                            <span class="text-white">CLI</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 mb-2 flex items-center justify-center gradient-border">
+                                <i class="fas fa-code text-4xl text-purple-300"></i>
+                            </div>
+                            <span class="text-white">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">My Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Project 1 -->
+                 <div class="bg-gradient-to-r from-violet-900 to-pink-900 p-1  rounded-xl overflow-hidden project-card gradient-box">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image_1.png" 
+                             alt="Project 2" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">EGC collaboration build website</h3>
+                        <p class="text-white-400 mb-4">
+                            Role: Frontend Developer (Collaboration)<br>
+ Contributed to developing a responsive coaching center website using HTML, CSS, and JavaScript, focusing on frontend design and development."
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="https://empowergc.in/" class="btn-primary text-white font-bold py-2 px-4 rounded-full text-sm">
+                                View Project
+                            </a>
+                            <a href="#" class="border border-white-600 text-white-500 font-bold py-2 px-4 rounded-full text-sm hover:bg-white-500 hover:text-white transition text-white">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gradient-to-r from-violet-900 to-pink-900 p-1  rounded-xl overflow-hidden project-card gradient-box">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image_2.png" 
+                             alt="Project 2" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Electric bill calculator</h3>
+                        <p class="text-white-400 mb-4">
+                           
+Description:<br>
+Built a responsive electric bill calculator web app with a user-friendly interface. Included a feedback form using an API to collect user input and send it to the developer for improvements
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="https://eb-calculator.netlify.app/" class="btn-primary text-white font-bold py-2 px-4 rounded-full text-sm">
+                                View Project
+                            </a>
+                            <a href="https://github.com/Mr-tamilan-yt/EB-bill-calculator/tree/main/electric%20bill%20calculator%20-%20Copy" class="border border-white-600 text-white-500 font-bold py-2 px-4 rounded-full text-sm hover:bg-white-500 hover:text-white transition text-white">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                  <div class="bg-gradient-to-r from-violet-900 to-pink-900 p-1  rounded-xl overflow-hidden project-card gradient-box">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image3.jpeg" 
+                             alt="Project 2" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Ai travel planner</h3>
+                        <p class="text-white-400 mb-4">
+                            Description:<br>
+                           Developed an AI-based travel planner that suggests personalized itineraries based on user preferences, enhancing trip planning with smart recommendations and an intuitive interface.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="https://aietlify.app/" class="btn-primary text-white font-bold py-2 px-4 rounded-full text-sm">
+                                View Project
+                            </a>
+                            <a href="https://github.com/Mr-tatraveller-/tree/main/Ai-Travel-Planner" class="border border-white-600 text-white-500 font-bold py-2 px-4 rounded-full text-sm hover:bg-white-500 hover:text-white transition text-white">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            
+            <div class="text-center">
+
+                <a href="https://github.com/Mr-tamilan-yt?tab=repositories"
+   class="bg-gradient-to-r from-violet-700 to-pink-600 text-white font-bold py-3 px-10 rounded-full inline-block shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
+   View All Projects
+</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Get In Touch</h2>
+
+            
+
+            <form action="#" method="POST" class="space-y-6" onsubmit="return validateForm()">
+    <input type="hidden" name="#" value="dbde0df86f">
+
+    <div>
+        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+        <input type="text" id="name" name="name" required
+               class="w-full px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
+               placeholder="Enter your name">
+        <p id="nameError" class="text-red-400 text-sm mt-1 hidden">Name is required.</p>
+    </div>
+
+    <div>
+        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+        <input type="email" id="email" name="email" required
+               class="w-full px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
+               placeholder="you@example.com">
+        <p id="emailError" class="text-red-400 text-sm mt-1 hidden">Enter a valid email.</p>
+    </div>
+
+    <div>
+        <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+        <input type="text" id="subject" name="subject" required
+               class="w-full px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
+               placeholder="Subject">
+        <p id="subjectError" class="text-red-400 text-sm mt-1 hidden">Subject is required.</p>
+    </div>
+
+    <div>
+        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+        <textarea id="message" name="message" rows="5" required
+                  class="w-full px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  placeholder="Write your message here..."></textarea>
+        <p id="messageError" class="text-red-400 text-sm mt-1 hidden">Message is required.</p>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn-primary text-white font-bold py-3 px-8 rounded-full inline-block">
+            Send Message
+        </button>
+    </div>
+</div>
+</form>     
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-gray-900 py-4 ">  
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">NK</a>
+                    <p class="text-gray-400 mt-2">© 2025 Nandhakumar. All rights reserved.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://github.com" target="_blank" class="social-icon text-gray-400 hover:text-purple-400 text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon text-gray-400 hover:text-purple-400 text-xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon text-gray-400 hover:text-purple-400 text-xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon text-gray-400 hover:text-purple-400 text-xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
